@@ -13,3 +13,11 @@ Packaging / env: venv + pip .
 Testing: pytest.
 
 Optional later: Docker for deployment, or a small Node/React wrapper for a UI.
+
+Start with API-key authentication (static key in dev); rotate for prod.
+
+Only store user data you need; provide TTL for memory items.
+
+Never log raw user-provided sensitive fields.
+
+If you store locally, keep the DB in project folder and ignore it in Git.
